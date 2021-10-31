@@ -1,5 +1,5 @@
 {
-  "name": "minecraft-assets",
+  "name": "next-minecraft-assets",
   "version": "1.8.2",
   "description": "Provide minecraft assets",
   "main": "index.js",
@@ -13,21 +13,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/rom1504/node-minecraft-assets.git"
+    "url": "git+ssh://git@github.com/parrajustin/node-minecraft-assets.git"
   },
   "keywords": [
     "minecraft",
     "assets"
   ],
-  "author": "Romain Beaumont <romain.rom1@gmail.com>",
+  "author": "Justin Parra <contact@parrajust.in> (parrajust.in)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rom1504/node-minecraft-assets/issues"
+    "url": "https://github.com/parrajustin/node-minecraft-assets/issues"
   },
-  "homepage": "https://github.com/rom1504/node-minecraft-assets#readme",
+  "homepage": "https://github.com/parrajustin/node-minecraft-assets#readme",
   "devDependencies": {
     "@bazel/bazelisk": "latest",
     "@bazel/buildifier": "latest",
+    "@bazel/esbuild": "^4.4.2",
     "@bazel/ibazel": "latest",
     "@bazel/typescript": "^4.4.2",
     "@types/node": "^16.11.6",

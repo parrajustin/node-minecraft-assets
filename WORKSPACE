@@ -1,5 +1,3 @@
-# Bazel workspace created by @bazel/create 4.4.2
-
 # Declares that this directory is the root of a Bazel workspace.
 # See https://docs.bazel.build/versions/main/build-ref.html#workspace
 workspace(
@@ -24,4 +22,6 @@ yarn_install(
     yarn_lock = "//:yarn.lock",
 )
 
+load("@build_bazel_rules_nodejs//toolchains/esbuild:esbuild_repositories.bzl", "esbuild_repositories")
 
+esbuild_repositories(npm_repository = "npm")
