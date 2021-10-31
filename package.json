@@ -8,7 +8,8 @@
     "test": "npm run lint",
     "lint": "standard",
     "fix": "standard --fix",
-    "prepare": "npm install require-self && require-self"
+    "prepare": "npm install require-self && require-self",
+    "build": "bazel build //..."
   },
   "repository": {
     "type": "git",
@@ -25,7 +26,19 @@
   },
   "homepage": "https://github.com/rom1504/node-minecraft-assets#readme",
   "devDependencies": {
+    "@bazel/bazelisk": "latest",
+    "@bazel/buildifier": "latest",
+    "@bazel/ibazel": "latest",
+    "@bazel/typescript": "^4.4.2",
+    "@types/node": "^16.11.6",
+    "@typescript-eslint/eslint-plugin": "^5.2.0",
+    "@typescript-eslint/parser": "^5.2.0",
+    "eslint": "^8.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.1",
     "require-self": "^0.2.3",
-    "standard": "^16.0.1"
+    "standard": "^16.0.1",
+    "typescript": "^4.4.4"
   }
 }

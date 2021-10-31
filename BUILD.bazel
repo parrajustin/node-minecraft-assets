@@ -1,0 +1,32 @@
+# load("@npm//@bazel/esbuild:index.bzl", "esbuild")
+load("@npm//@bazel/typescript:index.bzl", "ts_config", "ts_project")
+
+ts_config(
+    name = "tsconfig",
+    src = "tsconfig.json",
+    visibility = [":__subpackages__"],
+)
+
+ts_project(
+    name = "node_minecraft_assets",
+    srcs = glob([
+        "lib/*.ts",
+        "index.ts",
+        "minecraft-assets/**/*.json",
+    ]),
+    composite = True,
+    declaration = True,
+    declaration_map = True,
+    resolve_json_module = True,
+    source_map = True,
+    tsconfig = ":tsconfig",
+    deps = [
+        "@npm//@types/node",
+    ],
+)
+
+# esbuild(
+#     name = "worker_bundle",
+#     entry_point = "index.ts",
+#     deps = [":node_minecraft_assets"],
+# )
