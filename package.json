@@ -1,9 +1,9 @@
 {
-  "name": "next-minecraft-assets",
-  "version": "1.8.2",
-  "description": "Provide minecraft assets",
+  "name": "next_minecraft_assets",
+  "version": "2.0.0",
+  "description": "Provide access to minecraft assets",
   "main": "index.js",
-  "tonicExampleFilename": "example.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "npm run lint",
     "lint": "standard",
