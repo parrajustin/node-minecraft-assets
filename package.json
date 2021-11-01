@@ -1,6 +1,6 @@
 {
   "name": "@parra_labs/mc_assets",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Provide access to minecraft assets, based on minecraft-assets (https://www.npmjs.com/package/minecraft-assets)",
   "main": "index.js",
   "types": "index.d.ts",
