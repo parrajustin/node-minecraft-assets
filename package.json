@@ -1,7 +1,7 @@
 {
-  "name": "next_minecraft_assets",
+  "name": "@parra_labs/minecraft_assets",
   "version": "2.0.0",
-  "description": "Provide access to minecraft assets",
+  "description": "Provide access to minecraft assets, based on minecraft-assets (https://www.npmjs.com/package/minecraft-assets)",
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {

@@ -6,3 +6,4 @@
 !**/**.d.ts.map
 !minecraft-assets/**/*.png
 !minecraft-assets/**/*.json
+.eslintrc.js
